@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Ilian Bosserez</title>
+</head>
+
+<body>
+
+    <nav class="padding">
+        <div class="portfoliopreview">
+            <p>Portfolio</p>
+            <div class="lineportfolio"></div>
+            <p>2024</p>
+        </div>
+        <div class="burger" onclick="toggleMenu()">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+
+        <div class="nav-menu">
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#Work">Work</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li></ul>
+        </div>
+    </nav>
+
+    <header class="padding animate">
+        <div class="headertext">
+            <h1 class="animate">Ilian Bosserez</h1>
+            <h2 class="animate" id="typewriter"></h2>
+            <a href="#contact" class="btn">Hire →</a>
+        </div>
+        <img src="img/Artboard 1.svg" alt="Header Image">
+    </header>
+
+    <div id="Work" class="projects padding animate">
+        <div class="newsection">
+            <p>Projects</p>
+            <div class="linebody animate"></div>
+        </div>
+        <section class="articles animate">
+            <article class="main">
+                <div class="video-preview" data-thumb="thumb1" data-video="video1">
+                    <a id="thumb1" class="thumb" href="work.html" >
+                        <img src="img/respire_thumbnail.svg" alt="Preview Image" class="preview-image" loading="lazy">
+                    </a>
+                    <a id="video1-link" class="video-link" href="work.html" >
+                        <video id="video1" class="preview-video" muted loop>
+                            <source src="img/respire.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </a>
+                </div>
+                <div class="articletext">
+                    <div class="lijn"></div>
+                    <p>RESPIRE</p>
+                </div>
+
+            </article>
+            <div class="side">
+                <article>
+                    <div class="video-preview" data-thumb="thumb2" data-video="video2">
+                        <a id="thumb2" class="thumb" href="underconstruction.html" >
+                            <img src="img/hoppin_thumbnail.svg" alt="Preview Image" class="preview-image">
+                        </a>
+                        <a id="video2-link" class="video-link" href="underconstruction.html">
+                            <video id="video2" class="preview-video" muted loop>
+                                <source src="img/hoppin.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </a>
+                    </div>
+                    <div class="articletext">
+                        <div class="lijn"></div>
+                        <p>HOPPIN</p>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="video-preview" data-thumb="thumb3" data-video="video3">
+                        <a id="thumb3" class="thumb" href="underconstruction.html">
+                            <img src="img/nectar_thumbnail.svg" alt="Preview Image" class="preview-image">
+                        </a>
+                        <a id="video3-link" class="video-link" href="underconstruction.html">
+                            <video id="video3" class="preview-video" muted loop>
+                                <source src="img/nectar.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </a>
+                    </div>
+                    <div class="articletext">
+                        <div class="lijn"></div>
+                        <p>THE NECTAR BREWERY</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="services" class="services animate">
+            <div class="newsection">
+                <p>Services</p>
+                <div class="linebody animate"></div>
+            </div>
+            <h3>I can help you with <span class="point dot1">.</span><span class="point dot2">.</span><span
+                    class="point dot3">.</span></h3>
+            <div class="servicemain">
+                <div class="design">
+                    <div class="servicecontent">
+                        <svg class="servicelogo" xmlns="http://www.w3.org/2000/svg" width="8em" height="8em"
+                            viewBox="0 0 28 28">
+                            <path fill="#C2C2BE"
+                                d="M6.595 2.084A.75.75 0 0 1 7 2.75c0 1.17.403 1.848.867 2.519q.066.096.138.196C8.448 6.093 9 6.873 9 8a3.5 3.5 0 1 1-7 0c0-.823.084-1.72.649-2.72c.552-.977 1.526-1.986 3.17-3.143a.75.75 0 0 1 .776-.053m2.627 3.39A6 6 0 0 1 18.48 10h-2.729a3.75 3.75 0 0 0-3.75 3.75v2.73a6 6 0 0 1-2.012-.53c-.016.489-.05 1.023-.1 1.583a7.5 7.5 0 0 0 2.112.45v2.267a3.75 3.75 0 0 0 3.75 3.75h6.5a3.75 3.75 0 0 0 3.75-3.75v-6.5a3.75 3.75 0 0 0-3.75-3.75h-2.266A7.5 7.5 0 0 0 8.386 4.229c.09.154.192.308.305.471q.057.085.13.184c.118.166.259.362.401.59m13.03 6.026a2.25 2.25 0 0 1 2.25 2.25v6.5a2.25 2.25 0 0 1-2.25 2.25h-6.5a2.25 2.25 0 0 1-2.25-2.25v-2.316a7.504 7.504 0 0 0 6.433-6.434zm-8.75 4.917V13.75a2.25 2.25 0 0 1 2.25-2.25h2.666a6.005 6.005 0 0 1-4.917 4.917M2 15.287c0-1.003.08-2.248.516-3.274c.833.62 1.866.987 2.984.987a4.98 4.98 0 0 0 2.986-.989c.435 1.027.514 2.274.514 3.276c0 1.663-.264 4.21-.748 6.35c-.24 1.068-.546 2.079-.923 2.84c-.187.38-.412.737-.687 1.01c-.277.274-.66.513-1.14.513s-.862-.239-1.139-.514c-.275-.272-.5-.629-.688-1.008c-.377-.762-.683-1.773-.925-2.84c-.485-2.141-.75-4.688-.75-6.35" />
+                        </svg>
+                        <div class="lijnservice"></div>
+                        <div class="servicetext">
+                            <h4>Design</h4>
+                            <p>With a solid foundation in graphic design, web design, UI/UX, and video editing, I
+                                deliver
+                                creative and user-friendly digital solutions. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="development">
+                    <div class="servicecontent">
+                        <svg class="servicelogo" xmlns="http://www.w3.org/2000/svg" width="8em" height="8em"
+                            viewBox="0 0 256 256">
+                            <path fill="#C2C2BE"
+                                d="M216 40H40a16 16 0 0 0-16 16v144a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V56a16 16 0 0 0-16-16M92.8 145.6a8 8 0 1 1-9.6 12.8l-32-24a8 8 0 0 1 0-12.8l32-24a8 8 0 0 1 9.6 12.8L69.33 128Zm58.89-71.4l-32 112a8 8 0 1 1-15.38-4.4l32-112a8 8 0 0 1 15.38 4.4m53.11 60.2l-32 24a8 8 0 0 1-9.6-12.8l23.47-17.6l-23.47-17.6a8 8 0 1 1 9.6-12.8l32 24a8 8 0 0 1 0 12.8" />
+                        </svg>
+                        <div class="lijnservice"></div>
+                        <div class="servicetext">
+                            <h4>Development</h4>
+                            <p>With expertise in front-end development, I create dynamic, responsive websites that are
+                                both
+                                visually appealing and highly functional.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="brand">
+                    <div class="servicecontent">
+                        <svg class="servicelogo" xmlns="http://www.w3.org/2000/svg" width="8em" height="8em"
+                            viewBox="0 0 24 24">
+                            <path fill="#C2C2BE"
+                                d="M4.5 9.766C4.5 5.737 7.874 2.5 12 2.5s7.5 3.237 7.5 7.266c0 2.354-.973 4.478-2.795 5.817a.57.57 0 0 0-.228.32c-.059.25-.124.538-.19.848a.2.2 0 0 1-.197.159h-3.14a.2.2 0 0 1-.2-.2v-.664l1.05-1.648a.75.75 0 0 0-.17-.993l-1.8-1.413l.803-1.26a.75.75 0 0 0-1.266-.805l-1.166 1.832a.75.75 0 0 0 .17.993l1.798 1.413l-.802 1.26a.75.75 0 0 0-.117.402v.882a.2.2 0 0 1-.2.2H7.91a.2.2 0 0 1-.196-.158c-.067-.31-.132-.599-.19-.848a.57.57 0 0 0-.23-.32C5.475 14.243 4.5 12.12 4.5 9.766m3.781 8.644a.2.2 0 0 0-.198.235c.105.604.182 1.147.204 1.515c.063 1.041.83 1.899 1.855 2.12l.196.043a7.9 7.9 0 0 0 3.324 0l.196-.043c1.025-.221 1.792-1.079 1.855-2.12c.022-.368.1-.91.204-1.515a.2.2 0 0 0-.198-.235z" />
+                        </svg>
+                        <div class="lijnservice"></div>
+                        <div class="servicetext">
+                            <h4>Brand Identity</h4>
+                            <p>I guide businesses in creating memorable, impactful brands
+                                that align with their vision and target audience.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+        <section id="about" class="about animate">
+            <div class="newsection">
+                <p>About</p>
+                <div class="linebody animate"></div>
+            </div>
+
+            <div class="aboutcontent">
+                <div class="textabout">
+                    <h3>Hello,</h3>
+                    <p>I started out with a degree in Media and Entertainment Business, where I dove into digital
+                        marketing, storytelling, and a couple of unforgettable internships at Universal Music,
+                        Welikeyou, and Brussels Airlines.</p>
+
+                    <p>Afterwards i jumped into a second degree in Digital Experience Design to
+                        dive deeper into the world of design, UX, and web development.</p>
+
+                    <p>My goal? To blend my marketing knowledge and design skills, delivering digital products that not
+                        only look great
+                        but make brands shine.</p>
+                </div>
+                <img src="img/ik thailand.jpg" alt="photo of me" class="aboutimg">
+            </div>
+        </section>
+        <footer id="contact" class="animate">
+            <div class="newsection">
+                <p>Contact</p>
+                <div class="linebody animate"></div>
+            </div>
+            <div class="footercontent">
+                <h3>For any questions please mail me:</h3>
+                <a class="mail" href="mailto:name@email.com">il.bosserez@gmail.com</a>
+            </div>
+        </footer>
+
+
+    </div>
+
+    <script src="cursor.js"></script>
+
+
+</body>
+
+</html>

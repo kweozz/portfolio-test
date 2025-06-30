@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sneaker Configurator</title>
+  <link rel="stylesheet" href="normalize.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet"/>
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+<nav class="padding">
+  <div class="portfoliopreview">
+    <p>Portfolio</p>
+    <div class="lineportfolio"></div>
+    <p>2024</p>
+  </div>
+  <div class="burger" onclick="toggleMenu()">
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+  </div>
+  <div class="nav-menu padding">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#Work">Work</a></li>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="fullscreen-header animate">
+  <h1 class="big-heading">Sneaker Configurator</h1>
+  <h2 class="subheading">3D configurator built with Three.js, MongoDB & GSAP</h2>
+  <video src="img/swearconfigthumb.jpg" autoplay muted loop playsinline class="hero-video"></video>
+</header>
+
+<section class="project-meta padding">
+  <div class="meta">
+    <div><strong>Role</strong><p>UI/UX Designer, Developer</p></div>
+    <div><strong>Tech</strong><p>Three.js, MongoDB, Express, Node.js</p></div>
+    <div><strong>Timeline</strong><p>3 weeks</p></div>
+    <div><strong>Type</strong><p>Individual School Project</p></div>
+  </div>
+</section>
+
+<section class="project-intro padding animate">
+  <h3>Project Brief</h3>
+  <p>
+    The goal of this project was to create an interactive 3D sneaker configurator that allows users to customize their sneakers in real-time. This included color options, textures, and camera interaction. I built a custom backend using Node.js & MongoDB to store configurations and implemented animations using GSAP.
+  </p>
+  <a href="https://three-js-sneaker-store.vercel.app/" target="_blank" class="live-link">View Live Project</a>
+  <a href="https://www.loom.com/share/2958e4ca69a44250a6d647042597170c" target="_blank" class="live-link">Watch Demo Video</a>
+</section>
+
+<section class="mockup-gallery">
+  <img src="img/swearconfigthumb.jpg" alt="Configurator Interface"/>
+  <img src="img/swearconfigthumb.jpg" alt="Zoom/Color Change"/>
+  <img src="img/swearconfigthumb.jpg" alt="Color Options"/>
+</section>
+
+<section class="technical-details padding animate">
+  <h3>Technical Architecture</h3>
+  <p>
+    The configurator is built using <strong>Three.js</strong> for 3D rendering, <strong>MongoDB</strong> for storing sneaker configurations, and <strong>Node.js + Express</strong> as the backend API. I also implemented GSAP for micro-interactions and smooth transitions.
+  </p>
+</section>
+
+<section class="learnings padding animate">
+  <h3>Lessons Learned</h3>
+  <ul>
+    <li>Working with real-time 3D using Three.js</li>
+    <li>Improved backend structuring using Express & MongoDB</li>
+    <li>Creating smooth animations using GSAP</li>
+    <li>Deployment via Vercel and managing performance optimizations</li>
+  </ul>
+</section>
+
+<footer class="next-project padding">
+  <p>← Back to <a href="index.html#Work">Work</a></p>
+</footer>
+
+<script src="cursor.js"></script>
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.utils.toArray('.animate').forEach(section => {
+    gsap.from(section, {
+      opacity: 0,
+      y: 40,
+      duration: 1,
+      scrollTrigger: {
+        trigger: section,
+        start: 'top 85%',
+        toggleActions: 'play none none none'
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
