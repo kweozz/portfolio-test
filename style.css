@@ -149,9 +149,19 @@ nav {
     transform: translateX(100%); /* Hidden by default */
 }
 
+.nav-menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+
 .nav-menu li {
     margin: 1.5em 0;
     list-style: none;
+       width: 100%; /* Zorgt ervoor dat alle items dezelfde breedte hebben */
+    text-align: center;
 }
 
 .nav-menu li a {
@@ -160,8 +170,14 @@ nav {
     padding: 1em;
     font-size: 2.5em;
     font-family: "Nelphim", sans-serif;
+    text-align: center;
+    transition: transform 0.3s ease; /* Alleen transform gebruiken */
+    transform-origin: center; /* Vergroot vanuit het midden */
 }
 
+.nav-menu li a:hover {
+    transform: scale(1.1); /* Vergroot de tekst visueel */
+}
 
 .nav-menu ul {
     padding: 0;
